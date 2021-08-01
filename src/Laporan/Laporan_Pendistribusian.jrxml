@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="38331a35-bab9-4b13-83c4-646f7c2d4e4c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     pendistribusian.`id_mustahiq` AS pendistribusian_id_mustahiq,
+     pendistribusian.`nama_mustahiq` AS pendistribusian_nama_mustahiq,
+     pendistribusian.`jenis_kelamin` AS pendistribusian_jenis_kelamin,
+     pendistribusian.`golongan` AS pendistribusian_golongan,
+     pendistribusian.`alamat` AS pendistribusian_alamat,
+     pendistribusian.`tanggal` AS pendistribusian_tanggal,
+     pendistribusian.`pendistribusian` AS pendistribusian_pendistribusian,
+     pendistribusian.`keterangan` AS pendistribusian_keterangan
+FROM
+     `pendistribusian` pendistribusian]]>
+	</queryString>
+	<field name="pendistribusian_id_mustahiq" class="java.lang.String"/>
+	<field name="pendistribusian_nama_mustahiq" class="java.lang.String"/>
+	<field name="pendistribusian_jenis_kelamin" class="java.lang.String"/>
+	<field name="pendistribusian_golongan" class="java.lang.String"/>
+	<field name="pendistribusian_alamat" class="java.lang.String"/>
+	<field name="pendistribusian_tanggal" class="java.lang.String"/>
+	<field name="pendistribusian_pendistribusian" class="java.lang.String"/>
+	<field name="pendistribusian_keterangan" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="-14" width="555" height="93" uuid="9852d08b-cc79-4744-a61f-a7e093a3edc2"/>
+				<imageExpression><![CDATA["C:\\Users\\Dwi Darmawan\\Documents\\netbeans projects\\BKM\\src\\Image\\logomsjd2.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="199" y="0" width="163" height="20" uuid="915b193a-9281-4e72-a292-065832ffb4c2"/>
+				<textElement>
+					<font fontName="Calisto MT" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Pendistribusian]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="169" splitType="Stretch">
+			<textField>
+				<reportElement x="133" y="0" width="422" height="20" uuid="e8f811ba-1cbf-4954-9727-252be7a2bb08"/>
+				<textFieldExpression><![CDATA[$F{pendistribusian_id_mustahiq}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="dd5d726a-3fba-4c48-943c-d1f3a6c4fede"/>
+				<text><![CDATA[Id Mustahiq]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="33" height="20" uuid="6efd334f-2d82-4945-a486-2a755acd0531"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="20" width="422" height="20" uuid="15654d6c-e270-4647-87b6-89843a2c9d06"/>
+				<textFieldExpression><![CDATA[$F{pendistribusian_nama_mustahiq}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="159dd384-b971-4822-ad5b-02a08626738f"/>
+				<text><![CDATA[Nama Mustahiq]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="20" width="33" height="20" uuid="5eaa29c3-2960-466f-873d-861362e45736"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="40" width="422" height="20" uuid="7c1da676-d590-4ba1-8feb-254778894753"/>
+				<textFieldExpression><![CDATA[$F{pendistribusian_jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="40" width="100" height="20" uuid="38bb2874-f2aa-4f96-948d-946f1765afa4"/>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="40" width="33" height="20" uuid="66a955b4-85f7-40c6-b4ec-20740cbbba91"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="60" width="422" height="20" uuid="1dc54ad8-e011-4d60-9195-d47c73d0d73a"/>
+				<textFieldExpression><![CDATA[$F{pendistribusian_golongan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="60" width="100" height="20" uuid="9c5ac16c-877a-4046-b1c5-2f84c5ca48d4"/>
+				<text><![CDATA[Golongan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="60" width="33" height="20" uuid="efc0a692-ee77-4972-b15b-98fa023248c5"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="80" width="422" height="20" uuid="cacd7112-c3e4-4b97-a2d0-e91ad7e0b87e"/>
+				<textFieldExpression><![CDATA[$F{pendistribusian_alamat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="80" width="100" height="20" uuid="9594879a-2b22-47fc-94fe-6ec5cdb4411c"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="80" width="33" height="20" uuid="248c6540-634f-4639-9b2f-052eceb078aa"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="100" width="422" height="20" uuid="8889831b-98b6-48a9-8c84-d02680be66e2"/>
+				<textFieldExpression><![CDATA[$F{pendistribusian_tanggal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="100" width="100" height="20" uuid="73254e62-0f01-442c-a8a7-12e17298367f"/>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="120" width="33" height="20" uuid="f69c6b54-5deb-4203-ac9f-27c97635cf40"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="120" width="422" height="20" uuid="c7fe5568-ca7d-4018-b8d3-196d17593b7a"/>
+				<textFieldExpression><![CDATA[$F{pendistribusian_pendistribusian}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="120" width="100" height="20" uuid="54f8591c-7da9-466b-a0fe-6380dae21751"/>
+				<text><![CDATA[Pendistribusian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="100" width="33" height="20" uuid="33f5b1de-c82a-4337-9a8b-b26d692fc6ae"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="140" width="422" height="20" uuid="f80e525b-ada5-4507-b433-e649b37c8657"/>
+				<textFieldExpression><![CDATA[$F{pendistribusian_keterangan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="140" width="100" height="20" uuid="20b1d4c7-ea1e-439a-b0f1-ca8f55a1c573"/>
+				<text><![CDATA[Keterangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="101" y="140" width="33" height="20" uuid="58e7baeb-d053-4ba3-90c5-b8be2498e6a9"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

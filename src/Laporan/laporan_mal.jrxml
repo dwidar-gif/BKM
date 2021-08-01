@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c25ae28b-f094-4276-af45-a634ba1a4e5f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     zakat_mal.`no_penerimaan` AS zakat_mal_no_penerimaan,
+     zakat_mal.`tanggal` AS zakat_mal_tanggal,
+     zakat_mal.`nama_muzakki` AS zakat_mal_nama_muzakki,
+     zakat_mal.`jenis_kelamin` AS zakat_mal_jenis_kelamin,
+     zakat_mal.`alamat` AS zakat_mal_alamat,
+     zakat_mal.`no_telepon` AS zakat_mal_no_telepon,
+     zakat_mal.`nisab` AS zakat_mal_nisab,
+     zakat_mal.`hitung_nisab` AS zakat_mal_hitung_nisab,
+     zakat_mal.`hitung_harta` AS zakat_mal_hitung_harta,
+     zakat_mal.`bayar_mal` AS zakat_mal_bayar_mal,
+     zakat_mal.`infaq_shadaqah` AS zakat_mal_infaq_shadaqah
+FROM
+     `zakat_mal` zakat_mal]]>
+	</queryString>
+	<field name="zakat_mal_no_penerimaan" class="java.lang.String"/>
+	<field name="zakat_mal_tanggal" class="java.lang.String"/>
+	<field name="zakat_mal_nama_muzakki" class="java.lang.String"/>
+	<field name="zakat_mal_jenis_kelamin" class="java.lang.String"/>
+	<field name="zakat_mal_alamat" class="java.lang.String"/>
+	<field name="zakat_mal_no_telepon" class="java.lang.String"/>
+	<field name="zakat_mal_nisab" class="java.lang.Integer"/>
+	<field name="zakat_mal_hitung_nisab" class="java.lang.String"/>
+	<field name="zakat_mal_hitung_harta" class="java.lang.Integer"/>
+	<field name="zakat_mal_bayar_mal" class="java.lang.String"/>
+	<field name="zakat_mal_infaq_shadaqah" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="555" height="79" uuid="fb4b9169-0199-452e-9189-09ab23dd3e5a"/>
+				<imageExpression><![CDATA["C:\\Users\\Dwi Darmawan\\Documents\\netbeans projects\\BKM\\src\\Image\\logomsjd2.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="52" splitType="Stretch">
+			<staticText>
+				<reportElement x="209" y="0" width="131" height="20" uuid="0de97555-e2cf-47ec-a5f6-9f9b5423fe8b"/>
+				<textElement>
+					<font fontName="Calisto MT" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Zakat Mal]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="172" splitType="Stretch">
+			<textField>
+				<reportElement x="133" y="0" width="422" height="20" uuid="5f3cc886-361b-4db3-bda0-ab9382a01cf0"/>
+				<textFieldExpression><![CDATA[$F{zakat_mal_no_penerimaan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="3c873017-f74e-4ef6-a9df-488e75feeae4"/>
+				<text><![CDATA[No Penerimaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="33" height="20" uuid="56358ce5-67ca-4561-9b46-724da647b082"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="6b31a76b-ece8-4841-bc0c-b9a9426dd1ba"/>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="20" width="422" height="20" uuid="409bdcc6-9fb2-44b2-96f0-40d4aabaff51"/>
+				<textFieldExpression><![CDATA[$F{zakat_mal_tanggal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="40" width="33" height="20" uuid="8542a33a-6988-422a-b2ba-e07f40c58295"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="100" height="20" uuid="98f4c336-02a0-4f51-ad8f-aeae30918149"/>
+				<text><![CDATA[Nama Muzakki]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="40" width="422" height="20" uuid="d0944b21-cf1a-41e4-a522-13d8786abaa5"/>
+				<textFieldExpression><![CDATA[$F{zakat_mal_nama_muzakki}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="20" width="33" height="20" uuid="6360c745-5f2c-4a94-b7a6-1449181fb782"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="100" height="20" uuid="b06cc49f-137b-49be-b318-0b3cafb0c6e1"/>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="60" width="422" height="20" uuid="726475ab-954a-407a-a617-13bf20f5bbd7"/>
+				<textFieldExpression><![CDATA[$F{zakat_mal_jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="60" width="33" height="20" uuid="0b06be09-cde4-40a9-a7ca-7b972061d278"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="100" height="20" uuid="d5344edc-3f76-49ef-ac43-3bf012093c1f"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="80" width="422" height="20" uuid="203f1c4a-ac4b-435a-966d-d6467ba504d0"/>
+				<textFieldExpression><![CDATA[$F{zakat_mal_alamat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="80" width="33" height="20" uuid="e445391d-fd57-4e81-8768-18b2c784b9fd"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="100" height="20" uuid="fecafdc9-926f-49fb-850c-10f2f6ee4989"/>
+				<text><![CDATA[No Telepon]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="100" width="422" height="20" uuid="42c74784-861d-4260-8586-89392390b84c"/>
+				<textFieldExpression><![CDATA[$F{zakat_mal_no_telepon}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="100" width="33" height="20" uuid="6d72ccd0-b6e1-43bd-9d0c-e8f9be57f71c"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="120" width="100" height="20" uuid="f495c1d1-0379-494d-9e51-4c6390058c68"/>
+				<text><![CDATA[Bayar Mal]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="120" width="422" height="20" uuid="f5ab1089-0b96-4086-adaa-d764ebbd0360"/>
+				<textFieldExpression><![CDATA[$F{zakat_mal_bayar_mal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="120" width="33" height="20" uuid="e6ff6d0c-787e-48f8-aa6a-fe745d5baccb"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="140" width="100" height="20" uuid="b21c474b-28fe-4119-8542-84f4fd1aac0d"/>
+				<text><![CDATA[Infaq/Shadaqah]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="133" y="140" width="422" height="20" uuid="ac9a3301-6563-4d00-bbf6-471f9a4d1bee"/>
+				<textFieldExpression><![CDATA[$F{zakat_mal_infaq_shadaqah}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="140" width="33" height="20" uuid="628015b9-f73a-4253-bc80-4ca1d7ab16f9"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ :]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

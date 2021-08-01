@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f4a2e96f-ee2e-4ffc-bfbb-513ba93f098f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     zakat_fitrah.`no_penerimaan` AS zakat_fitrah_no_penerimaan,
+     zakat_fitrah.`tanggal` AS zakat_fitrah_tanggal,
+     zakat_fitrah.`nama_muzakki` AS zakat_fitrah_nama_muzakki,
+     zakat_fitrah.`jenis_kelamin` AS zakat_fitrah_jenis_kelamin,
+     zakat_fitrah.`alamat` AS zakat_fitrah_alamat,
+     zakat_fitrah.`no_telepon` AS zakat_fitrah_no_telepon,
+     zakat_fitrah.`jiwa` AS zakat_fitrah_jiwa,
+     zakat_fitrah.`nama_jiwa` AS zakat_fitrah_nama_jiwa,
+     zakat_fitrah.`pilih_fitrah` AS zakat_fitrah_pilih_fitrah,
+     zakat_fitrah.`bayar_fitrah` AS zakat_fitrah_bayar_fitrah,
+     zakat_fitrah.`infaq_shadaqah` AS zakat_fitrah_infaq_shadaqah
+FROM
+     `zakat_fitrah` zakat_fitrah]]>
+	</queryString>
+	<field name="zakat_fitrah_no_penerimaan" class="java.lang.String"/>
+	<field name="zakat_fitrah_tanggal" class="java.lang.String"/>
+	<field name="zakat_fitrah_nama_muzakki" class="java.lang.String"/>
+	<field name="zakat_fitrah_jenis_kelamin" class="java.lang.String"/>
+	<field name="zakat_fitrah_alamat" class="java.lang.String"/>
+	<field name="zakat_fitrah_no_telepon" class="java.lang.String"/>
+	<field name="zakat_fitrah_jiwa" class="java.lang.Integer"/>
+	<field name="zakat_fitrah_nama_jiwa" class="java.lang.String"/>
+	<field name="zakat_fitrah_pilih_fitrah" class="java.lang.String"/>
+	<field name="zakat_fitrah_bayar_fitrah" class="java.lang.String"/>
+	<field name="zakat_fitrah_infaq_shadaqah" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="132" splitType="Stretch">
+			<image>
+				<reportElement x="96" y="0" width="706" height="93" uuid="8f2924e3-7223-4969-8a37-4ceeaea38e36"/>
+				<imageExpression><![CDATA["C:\\Users\\Dwi Darmawan\\Documents\\netbeans projects\\BKM\\src\\Image\\logomsjd2.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="319" y="0" width="177" height="20" uuid="d74d8bbc-32bb-48bd-a633-937f67e33761"/>
+				<textElement>
+					<font fontName="Calisto MT" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanda Terima Zakat Fitrah]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="79" height="20" uuid="749a3fd9-94bf-4947-950f-6d6fd313ca4c"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No Penerimaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="0" width="102" height="20" uuid="92aa6fc5-6113-4ce2-b750-154a385335c3"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="0" width="72" height="20" uuid="911b4b7c-0fd2-4a10-a93c-c6c9b032c6e4"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama Muzakki]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="0" width="72" height="20" uuid="93a749bd-fd59-4629-85ff-0a0f407f3c8b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="0" width="72" height="20" uuid="3bb4a305-55eb-48b7-859d-e291ae693bdc"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="397" y="0" width="72" height="20" uuid="29ee53ec-90c7-4862-9254-448f326d6c2a"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="0" width="42" height="20" uuid="dbd3b7f3-abef-40ed-988d-9458c2bf6519"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jiwa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="511" y="0" width="72" height="20" uuid="17ff3e81-4af7-4ba1-8ce0-70777d202a63"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama Jiwa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="583" y="0" width="72" height="20" uuid="d9fcc2f1-4bf0-49ab-b7b7-2da6ddabec53"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Pilih Fitrah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="658" y="0" width="72" height="20" uuid="ff36320a-c219-4c23-915f-c3752c2704d5"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Bayar Fitrah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="730" y="0" width="72" height="20" uuid="55915f95-f697-4218-ad4f-05e1f85270c7"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Infaq/Shadaqah]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="3" y="0" width="79" height="20" uuid="eeb60c5f-ff1f-4d83-bb3f-b0e21aaad611"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{zakat_fitrah_no_penerimaan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="0" width="102" height="20" uuid="dad0583e-5ddb-4a48-816c-33d4ce596541"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{zakat_fitrah_tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="1" width="72" height="20" uuid="d8cd2f36-10a8-4d19-8dc5-5205c4d326cf"/>
+				<textFieldExpression><![CDATA[$F{zakat_fitrah_nama_muzakki}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="256" y="0" width="72" height="20" uuid="d4a25e26-26d8-46b9-aea7-34bee076ef50"/>
+				<textFieldExpression><![CDATA[$F{zakat_fitrah_jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="328" y="0" width="72" height="125" uuid="7019b86e-221d-455a-8263-bdf1adced67b"/>
+				<textFieldExpression><![CDATA[$F{zakat_fitrah_alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="1" width="72" height="20" uuid="19a1dbe9-c50b-4c8a-93dc-3ea1f86fbaa0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{zakat_fitrah_no_telepon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="1" width="42" height="20" uuid="3407ec24-f110-412d-913d-f3e535d4f1c9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{zakat_fitrah_jiwa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="514" y="0" width="72" height="125" uuid="98873bd7-f089-4df7-8ecf-aa858562e487"/>
+				<textFieldExpression><![CDATA[$F{zakat_fitrah_nama_jiwa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="586" y="1" width="72" height="20" uuid="168ee514-7c61-4ee4-84cd-cc0035cbcbe7"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{zakat_fitrah_pilih_fitrah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="658" y="1" width="72" height="20" uuid="23e84ff2-6e11-4f7d-a8df-d34d0fb675a0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{zakat_fitrah_bayar_fitrah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="730" y="1" width="72" height="20" uuid="3ffdce16-d068-4c40-8034-856f68f387bf"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{zakat_fitrah_infaq_shadaqah}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="0" width="799" height="1" uuid="f73c51b4-5493-4f7e-b649-d1033fb40063"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="511" y="25" width="100" height="20" uuid="4effdd1c-0701-4bf1-9a0d-a841afacbd3e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calisto MT" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="689" y="25" width="100" height="20" uuid="3287886d-c457-4ff7-aff9-39e1bb6dc480"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calisto MT" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Muzakki]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="496" y="34" width="127" height="20" uuid="f161930c-6b4f-4a1a-bbad-662df9a66985"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(			)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="676" y="34" width="126" height="20" uuid="c7909f48-62cf-4cbf-b031-332f55c2220f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(			)]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

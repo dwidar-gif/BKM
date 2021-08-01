@@ -1,0 +1,59 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package GlassSwingControl;
+
+/**
+ *
+ * @author DONI
+ */
+
+import java.awt.*;
+import java.awt.geom.GeneralPath;
+import javax.swing.JPanel;
+
+public class GlassPanel extends JPanel {
+    
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        Graphics2D g2 = (Graphics2D) g.create();
+        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+        GradientPaint paint = new GradientPaint(0, 0, Color.GREEN, 0, getHeight(), Color.BLACK);
+        
+        g2.setPaint(paint);
+        g2.fillRect(0, 0, getWidth(), getHeight());
+
+        int width = getWidth();
+        int height = getHeight() * 5 / 100;
+
+        Color light = new Color(1F, 1F, 1F, 0.5F);
+        Color dark = new Color(1F, 1F, 1F, 0.0F);
+
+        paint = new GradientPaint(0, 0, light, 0, height, dark);
+        GeneralPath path = new GeneralPath();
+        path.moveTo(0, 0);
+        path.lineTo(0, height);
+        path.curveTo(0, height, width / 2, height / 2, width, height);
+        path.lineTo(width, 0);
+        path.closePath();
+
+        g2.setPaint(paint);
+        g2.fill(path);
+
+        paint = new GradientPaint(0, getHeight(), light, 0, getHeight() - height, dark);
+        path = new GeneralPath();
+        path.moveTo(0, getHeight());
+        path.lineTo(0, getHeight() - height);
+        path.curveTo(0, getHeight() - height, width / 2, getHeight() - height / 2, width, getHeight() - height);
+        path.lineTo(width, getHeight());
+        path.closePath();
+
+        g2.setPaint(paint);
+        g2.fill(path);
+    }   
+}
